@@ -1,0 +1,433 @@
+/* GERAIS */
+* {
+    list-style: none;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #262626; 
+}
+
+body {
+    margin: 0;
+}
+
+h3 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 28px;
+    text-align: center;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    text-transform: uppercase;
+    padding-right: 5px;
+    position: relative;
+    width: 100%;
+    }   
+    
+    .navbar-light .navbar-nav .nav-link {
+        color: #262626;
+        text-decoration: none;
+        font-family: 'Permanent Marker', cursive;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: #262626; 
+        background-color: #E8E474;
+    }
+
+    .navbar-collapse {
+        background: #fff;
+    }
+
+    .nav-logo img {
+        width: 92px;
+        margin: 5px;
+        padding: 9px;
+    }
+    
+/* ======================================================
+==========================================/* PAGINA HOME*/
+
+/* BOTÃO SUBIR */
+
+.arrow-up {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 74px;
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    width: 55px;
+    height: 55px;
+}
+
+.arrow-up img {
+    color: #fff;
+    margin: 12px;
+    position: relative;
+    transition: all 0.3s ease;
+    width: 31px 
+}
+
+.arrow-up:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.arrow-up:hover img {
+    color: #fff;
+    top: 5px;
+}
+
+/* PARALLAX CAPA */
+#capa .parallax {
+    background-image: url('../img/capa02.jpg');
+    height: 495px;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#capa .parallax-content {
+     text-align: center;
+     padding: 50px 0;
+     position: relative; 
+}
+
+#capa .parallax-content h3{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #262626;
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+#capa .parallax-content > p {
+    color: #262626;
+    text-transform: none;
+}
+
+/* PARALLAX TRIPS */
+#trips .parallax-trips {
+    background-image: url('../img/capa03.jpg');
+    height: 495px;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* SESSAO SOBRE */
+.sobre {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    margin: 35px;
+    align-items: center;
+    border-style: none;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.card div {
+    max-width: 400px;
+    margin-top: 10px;
+}
+
+/* SESSÃO SERVIÇOS*/
+.servicos {
+    padding: 50px;
+    min-height: 500px;
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #E8E474;
+    width: 100%;
+}
+.servicos > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+}
+
+.cardserv {
+    width: 315px;
+    height: 315px;
+    padding: 50px 30px;
+    margin: 0px 20px;
+    border-radius: 22px;
+    text-align: center;
+    color: rgb(38, 38, 38);
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.cardserv img {
+    max-width: 400px;
+    margin-bottom: 16px;
+    margin-top: 5px;
+}
+
+/* SESSAO INSTANOW */
+    .instaNow {
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+
+/*==================== PAGINA SOBRE ================== */
+.sobre-nos-foto {
+    background-image: url('../img/trips01.JPG'); 
+    height: 595px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color:rgba(50, 0, 0,0.5);
+}
+
+.historia {
+    padding: 60px;
+}
+
+.sobre-nos-conteudo {
+    padding: 30px;
+    color: #262626;
+    background-color: #53E1F4;
+}
+
+.equipe {
+    padding: 30px;
+}
+.membro {
+    padding: 15px;
+    margin: 0
+}
+.membro img {
+    width: 15%;
+    border-radius: 85px;
+}
+.membro a {
+    text-decoration-style: none;
+    color: #A0A09F;
+}
+
+/*==================== PAGINA GALERIA ================== */
+    .titulo-galeria {
+        margin: 35px;
+    }
+
+    .row-trips {
+        display: -ms-flexbox; 
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        padding: 0 4px;
+    }
+    
+    /* criando quatro colunas iguais que ficam próximas uma da outra */
+    .column {
+        -ms-flex: 25%; /* IE10 */
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+    }
+    
+    .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+    }
+
+.modal {
+    display: none; /* escondido por padrão*/
+    position: fixed; 
+    z-index: 1;
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; /* ativar a rolagem, se necessário */
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9); 
+    }
+
+/* conteudo img */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    }
+
+/* adicionando animação */
+.modal-content, #caption { 
+    animation-name: zoom;
+    animation-duration: 0.6s;
+    }
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+    }
+
+/* botão para fechar */
+#close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    }
+
+#close:hover,
+#close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+    }
+
+/*==================== PAGINA DESTINOS ================== */
+.arraial-do-cabo, .capitolio, .sao-thome-das-letras, .trindade, .campos-do-jordao, .thermas-dos-laranjais {
+    width: 100%;
+    height: 495px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color:rgba(50, 0, 0,0.5);
+    color: #FFFFFF;
+    }
+.arraial-do-cabo {
+    background-image: url('../img/capa-destinos01.jpg');
+}
+.capitolio {
+    background-image: url('../img/capa-destinos02.jpg');
+}
+.sao-thome-das-letras {
+    background-image: url('../img/capa-destinos04.jpg');
+}
+.trindade {
+    background-image: url('../img/capa-destinos05.jpg');
+}
+.campos-do-jordao {
+    background-image: url('../img/campos01.jpg');
+}
+.thermas-dos-laranjais {
+    background-image: url('../img/thermas.jpg');
+}
+
+/*==================== PAGINA DEPOIMENTOS ================== */
+.avaliacoes {
+    background-image: url('../img/fundo-depoimentos.jpg');
+    }
+.avaliacoes img {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.avaliacoes img :hover {
+   opacity: 1;
+}
+
+/*==================== PAGINA CONTATO ================== */
+.perguntas {
+    background-image: url('../img/fundo-perguntas.jpg');
+    color: white;
+
+    
+}
+
+.resposta {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(111, 114, 112);
+    padding-top: 8px;
+    font-style: italic;   
+}
+
+
+
+/*==================== FOOTER DE TODAS AS PAGINAS ================== */
+footer p{
+    color:#262626;
+}
+
+a{
+    color:#262626;
+}
+
+.endereco a:hover{
+    background-color: #A0A09F;
+    color: #262626;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.copyright{
+    background-color: #262626;
+}
+.copyright p{
+    text-align: center;
+    font-size: 14px;
+    padding-top: 50px;
+    color: #fff;
+}
+
+    /* =======================MEDIAQUERY==============================*/
+    @media (max-width:730px) {
+    .servicos > div {
+        display: block;
+        margin: 0 auto;
+    }
+     .cardserv {
+        margin: 0 auto;
+        margin-bottom: 24px;
+        width: 260px;
+        height: 334px;
+    }
+    .instaNow {
+        margin: 0;
+    }
+    .membro img {
+        width: 35%;
+    }
+}
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+    .nav-logo img {
+        width: 90px;
+        margin: 5px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    #capa .parallax, #trips .parallax-trips, .sobre-nos-foto,
+    .arraial-do-cabo, .capitolio, .sao-thome-das-letras, .trindade, .campos-do-jordao, .thermas-dos-laranjais {
+        background-size: 240%;
+        max-width: 100%;
+        height: 880px;
+    }
+}
+
+
+
