@@ -417,17 +417,25 @@ a{
 }
 
 @media screen and (max-width: 600px) {
-    #capa .parallax, #trips .parallax-trips, .sobre-nos-foto {
+    #capa .parallax, #trips .parallax-trips,  {
         background-size: 240%;
         max-width: 100%;
         height: 900px;
     }
     
-    .arraial-do-cabo, .capitolio, .sao-thome-das-letras, .trindade, .campos-do-jordao, .thermas-dos-laranjais {
-        background-size: 500%;
+     .arraial-do-cabo, .capitolio, .sao-thome-das-letras, .trindade, .campos-do-jordao, .thermas-dos-laranjais {
+        background-size: 450%;
         max-width: 100%;
-        height: 1144px;
+        height: 925px;
         background-attachment: inherit;
+    
+    }
+
+    .sobre-nos-foto {
+            background-size: 100%;
+            max-width: 100%;
+            height: 210px;
+            background-attachment: inherit;
     }
 }
 
