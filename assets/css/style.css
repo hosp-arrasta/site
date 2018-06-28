@@ -149,7 +149,7 @@ p {
 .servicos {
     padding: 50px;
     min-height: 500px;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -417,10 +417,11 @@ a{
 }
 
 @media screen and (max-width: 600px) {
-    #capa .parallax, #trips .parallax-trips,  {
+    #capa .parallax, #trips .parallax-trips  {
         background-size: 240%;
         max-width: 100%;
         height: 900px;
+        background-attachment: inherit;
     }
     
      .arraial-do-cabo, .capitolio, .sao-thome-das-letras, .trindade, .campos-do-jordao, .thermas-dos-laranjais {
@@ -432,10 +433,10 @@ a{
     }
 
     .sobre-nos-foto {
-            background-size: 100%;
-            max-width: 100%;
-            height: 210px;
-            background-attachment: inherit;
+        background-size: 100%;
+        max-width: 100%;
+        height: 210px;
+        background-attachment: inherit;
     }
 }
 
