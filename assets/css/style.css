@@ -189,14 +189,12 @@ p {
 
 /*==================== PAGINA SOBRE ================== */
 .sobre-nos-foto {
-    background-image: url('../img/trips01.JPG'); 
-    height: 595px;
-    background-attachment: fixed;
+    background-image: url('../img/capa-sobre.jpg');
+    height: 495px;
     background-position: center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    background-blend-mode: overlay;
-    background-color:rgba(50, 0, 0,0.5);
 }
 
 .historia {
@@ -310,8 +308,6 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-blend-mode: overlay;
-    background-color:rgba(50, 0, 0,0.5);
     color: #FFFFFF;
     }
 .arraial-do-cabo {
